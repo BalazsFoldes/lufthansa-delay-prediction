@@ -30,7 +30,7 @@ lufthansa-delay-prediction/
 │   ├── models.py                   # Model registry and training loop
 │   └── preprocessing.py            # Imputation, encoding, scaling
 │
-├── DOKUMENTACIO.md                 # Full documentation in hungarian
+├── DOKUMENTACIO.md                 # Full detailed documentation in hungarian
 ├── README.md
 ├── requirements.txt
 └── run_pipeline.py                 # End-to-end pipeline entry point
