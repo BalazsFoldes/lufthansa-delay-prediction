@@ -43,7 +43,7 @@ lufthansa-delay-prediction/
 ### 1. Clone & set up environment
 
 ```bash
-git clone https://github.com/your-username/lufthansa-delay-prediction.git
+git clone https://github.com/BalazsFoldes/lufthansa-delay-prediction
 cd lufthansa-delay-prediction
 
 python -m venv venv

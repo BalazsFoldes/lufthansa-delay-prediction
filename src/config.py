@@ -9,9 +9,9 @@ RESULTS_DIR = os.path.join(BASE_DIR, "outputs", "results")
 TARGET = "delay_over_15m"
 DATE_COL = "flight_datetime"
 
-# --- Leakage columns ------------------------------------------------------
-# These columns are excluded because they are only available AFTER the flight
-# has already departed or landed — using them would constitute data leakage.
+# --- leakage columns ------------------------------------------------------
+# these columns are excluded because they are only available AFTER the flight
+# has already departed or landed, using them would constitute data leakage.
 #
 # actual_delay_minutes          → the target itself is derived from this
 # actual_gate_out_time_diff     → measured after gate-out, not available pre-flight

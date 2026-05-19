@@ -231,7 +231,7 @@ A legértékesebb operációs beavatkozási pont a **previous_leg_delay figyelé
 
 ### Mennyire bíznál a modellben?
 
-**Őszintén ebben a formában kevésbé, de a megfelelő okokból.**
+**Őszintén ebben a formában kevésbé, de megfelelő okokból.**
 
 Az adat szintetikusan generált, szándékos véletlenszerűséggel. Egy 0.748-as ROC-AUC véletlenszerű adaton inkább azt jelzi, hogy a modell megtalálta a kis mennyiségű beépített jelet, nem azt, hogy erős prediktív erővel bír.
 

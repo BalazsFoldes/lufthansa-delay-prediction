@@ -65,13 +65,13 @@ def time_split(df: pd.DataFrame, test_month: int = 5, val_month: int = 4):
     """
     month = df[DATE_COL].dt.month
     train = df[month < val_month].copy()
-    val   = df[month == val_month].copy()
-    test  = df[month == test_month].copy()
+    val = df[month == val_month].copy()
+    test = df[month == test_month].copy()
 
     print(f"[time_split] Train: {len(train):,} | Val: {len(val):,} | Test: {len(test):,}")
-    print(f"             Train target rate: {train[TARGET].mean():.2%}")
-    print(f"             Val   target rate: {val[TARGET].mean():.2%}")
-    print(f"             Test  target rate: {test[TARGET].mean():.2%}")
+    print(f"Train target rate: {train[TARGET].mean():.2%}")
+    print(f"Val target rate: {val[TARGET].mean():.2%}")
+    print(f"Test target rate: {test[TARGET].mean():.2%}")
     return train, val, test
 
 

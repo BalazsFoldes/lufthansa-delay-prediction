@@ -40,7 +40,7 @@ def evaluate_model(model, X, y, name: str, threshold: float = 0.50):
         y_pred = model.predict(X)
  
     return {
-        "model":     name,
+        "model": name,
         "accuracy": round(accuracy_score(y, y_pred), 4),
         "precision": round(precision_score(y, y_pred, zero_division=0), 4),
         "recall": round(recall_score(y, y_pred, zero_division=0), 4),
@@ -94,7 +94,7 @@ def evaluate_all(fitted_models: dict, X_val,  X_val_sc,  y_val, X_test, X_test_s
     This two-step approach ensures the test set is never used for any
     tuning decision — the threshold included.
     """
-    rows  = []
+    rows = []
     preds = {}
  
     print("\n--- threshold search on validation set ---")
@@ -259,5 +259,5 @@ def print_summary_table(df_results: pd.DataFrame):
     print("=" * 75)
     best = df_results["f1"].idxmax()
     print(f"\n  → Best model by F1: {best}  (F1={df_results.loc[best,'f1']:.4f}"
-      f"  @ threshold={df_results.loc[best,'threshold']})")
+      f"/ threshold={df_results.loc[best,'threshold']})")
     print()

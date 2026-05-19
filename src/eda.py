@@ -155,7 +155,7 @@ def plot_delays_over_time(df: pd.DataFrame):
     df = df.copy()
     df[DATE_COL] = pd.to_datetime(df[DATE_COL])
     df["month"] = df[DATE_COL].dt.month
-    df["hour"]  = df[DATE_COL].dt.hour
+    df["hour"] = df[DATE_COL].dt.hour
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 4))
 

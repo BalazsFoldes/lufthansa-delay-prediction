@@ -96,7 +96,7 @@ MODELS = {
 }
 
 
-# Training function ---------------------------------
+# training function ---------------------------------
 
 def train_all(
     X_train, X_val,
@@ -104,9 +104,9 @@ def train_all(
     y_train, y_val,
 ):
     """
-    Train all models in the registry and return fitted model objects.
+    train all models in the registry and return fitted model objects.
 
-    Parameters
+    parameters
     ----------
     X_train / X_val       : unscaled feature DataFrames (for tree models)
     X_train_sc / X_val_sc : scaled feature DataFrames   (for linear models)
