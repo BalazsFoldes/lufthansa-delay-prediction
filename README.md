@@ -83,7 +83,7 @@ jupyter notebook notebooks/analysis.ipynb
 
 ---
 
-## Methodology
+## Technique
 
 ### Data Leakage
 Five columns were identified and removed before any modelling — they are only available *after* a flight has departed or landed:
